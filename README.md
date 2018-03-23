@@ -11,6 +11,7 @@ Python3 with ROOT have a lot of problems.
    * jupyter (optional)
    * scipy
    * numpy
+   * root_numpy
    * pandas
    * matplotlib
    * seaborn

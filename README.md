@@ -59,7 +59,7 @@ an example call in ipython would be:
 please make sure that `signal_pid.root` and `savedRF.pkl` exist in the same directory. This function will create named 
 `signal_ml.root` which contain Ml output probability distributions.
 
-4. Finally in your analysis code `tut_ana.C` use `fRun->AddFreind('signal_ml.root')` to be able to access the Ml output probability 
+4. Finally in your analysis code `tut_ana.C` use `fRun->AddFreind("signal_ml.root")` to be able to access the Ml output probability 
 distributions.
 
 5. For example tight selection of muons using Ml would be in the analysis code:

@@ -1,4 +1,3 @@
-from array import array
 import math
 import ROOT
 import pandas as pd
@@ -7,6 +6,7 @@ import collections
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.externals import joblib
+from array import array
 from sys import exit
 from ROOT import (PndPidProbability, PndPidMlAssociatorTask, FairRunAna, TObject, gROOT)
 

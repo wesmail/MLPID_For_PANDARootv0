@@ -126,10 +126,10 @@ void tut_ana_ml(int nevts = 0, TString prefix = "signal")
 		if ((i%100)==0) cout<<"evt " << i << endl;
 				
 		// *** Select with no PID info ('All'); type and mass are set  (modified)
-		theAnalysis->FillList(muplus,  "MuonLoosePlus", "PidAlgoMl");
-		theAnalysis->FillList(muminus, "MuonLooseMinus", "PidAlgoMl");
-		theAnalysis->FillList(piplus,  "PionLoosePlus", "PidAlgoMl");
-		theAnalysis->FillList(piminus, "PionLooseMinus", "PidAlgoMl");
+		theAnalysis->FillList(muplus,  "MuonAllPlus");
+		theAnalysis->FillList(muminus, "MuonAllMinus");
+		theAnalysis->FillList(piplus,  "PionAllPlus");
+		theAnalysis->FillList(piminus, "PionAllMinus");
 		
 		// *** combinatorics for J/psi -> mu+ mu-
 		jpsi.Combine(muplus, muminus);

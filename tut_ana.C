@@ -125,7 +125,7 @@ void tut_ana_ml(int nevts = 0, TString prefix = "signal")
 	{
 		if ((i%100)==0) cout<<"evt " << i << endl;
 				
-		// *** Select with no PID info ('All'); type and mass are set 		
+		// *** Select with no PID info ('All'); type and mass are set  (modified)
 		theAnalysis->FillList(muplus,  "MuonLoosePlus", "PidAlgoMl");
 		theAnalysis->FillList(muminus, "MuonLooseMinus", "PidAlgoMl");
 		theAnalysis->FillList(piplus,  "PionLoosePlus", "PidAlgoMl");
@@ -270,7 +270,7 @@ void tut_ana_ml(int nevts = 0, TString prefix = "signal")
 		// *** LOOSE PID combinatorics
 		// ***
 		
-		// *** and again with PidAlgoMvd;PidAlgoStt;PidAlgoDrc and loose selection
+		// *** and again with PidAlgoMl and loose selection
 		theAnalysis->FillList(muplus,  "MuonLoosePlus",  "PidAlgoMl");
 		theAnalysis->FillList(muminus, "MuonLooseMinus", "PidAlgoMl");
 		theAnalysis->FillList(piplus,  "PionLoosePlus",  "PidAlgoMl");
@@ -288,7 +288,7 @@ void tut_ana_ml(int nevts = 0, TString prefix = "signal")
 		// *** TIGHT PID combinatorics
 		// ***
 		
-		// *** and again with PidAlgoMvd;PidAlgoStt and tight selection
+		// *** and again with PidAlgoMl and tight selection
 		theAnalysis->FillList(muplus,  "MuonTightPlus",  "PidAlgoMl");
 		theAnalysis->FillList(muminus, "MuonTightMinus", "PidAlgoMl");
 		theAnalysis->FillList(piplus,  "PionLoosePlus",  "PidAlgoMl");

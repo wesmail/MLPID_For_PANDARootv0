@@ -15,7 +15,7 @@ Python3 with ROOT have a lot of problems.
    * pandas
    * matplotlib
    * seaborn
-   * tensorflow (for deep learning, not implemented yet)
+   * tensorflow (for deep learning)
    * tensorboard (for deep learning)
    * keras (for deep learning)
 
